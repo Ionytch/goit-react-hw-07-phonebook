@@ -40,8 +40,8 @@ export default function App() {
  
   const contacts = useSelector(state => state.contacts.items);
   const filtered=useSelector(state => state.filter);
-  const isLoading = useSelector(state => state.contacts.isLoading);
-  const error = useSelector(state => state.contacts.error);
+  // const isLoading = useSelector(state => state.contacts.isLoading);
+  // const error = useSelector(state => state.contacts.error);
   
   useEffect(() => {
     dispatch(fetchContacts());
